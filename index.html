@@ -1,26 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relvise</title>
+    <title>Real Estate</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header">
+            <div class="header__container container">
+                <a href="#" class="header__logo">SmartSpace</a>
 
+                <nav class="header__menu menu">
+                    <ul class="menu-header__list">
+                        <li class="menu-header__item">
+                            <a href="#" class="menu-header__link">Home</a>
+                        </li>
+
+                        <li class="menu-header__item">
+                            <a href="#" class="menu-header__link">About</a>
+                        </li>
+
+                        <li class="menu-header__item">
+                            <a href="#" class="menu-header__link">Service</a>
+                        </li>
+
+                        <li class="menu-header__item">
+                            <a href="#" class="menu-header__link">Portfolio</a>
+                        </li>
+
+                        <li class="menu-header__item">
+                            <a href="#" class="menu-header__link">Blog</a>
+                        </li>
+
+                        <li class="menu-header__item">
+                            <a href="#" class="menu-header__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <main class="main">
+            <section class="main__about about-block">
+                <div class="about-block__container container">
+                    <div class="about-block__body body-about-block">
+                        <div class="body-about-block__content content-about-block">
+                            <div class="content-about-block__body">
+                                <div class="content-about-block__subtitle">RESIDENTIAL & OFFICE SPACES</div>
 
+                                <h1 class="content-about-block__title">Smart Living Style for Smart People</h1>
+
+                                <div class="content-about-block__text">Much did had call new drew that kept. Limits
+                                    expect wonder law she. Now has you views woman noisy match money rooms.</div>
+                            </div>
+
+                            <form action="#" class="content-about-block__form form-about-block">
+                                <input type="text" class="form-about-block__input" placeholder="Enter Zipcode to search properties">
+                                <button type="submit" class="form-about-block__button">Search Now!</button>
+                            </form>
+                        </div>
+
+                        <!-- Slider main container -->
+                        <div class="body-about-block__slider swiper">
+                            <!-- <div class="body-about-block__slider slider-about-block swiper"> -->
+
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- <div class="slider-about-block__wrapper swiper-wrapper"> -->
+
+                                <!-- Slides -->
+                                <div class="swiper-slide ibg">
+                                    <!-- <div class="slider-about-block__slide swiper-slide"> -->
+
+                                    <img src="./img/about/slider/home1.jpeg " alt="Slider Imsge" class="slider-about-block__img">
+                                </div>
+
+                                <div class="swiper-slide ibg">
+                                    <!-- <div class="slider-about-block__slide swiper-slide"> -->
+
+                                    <img src="./img/about/slider/home2.jpeg " alt="Slider Imsge" class="slider-about-block__img">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="body-about-block__aroows">
+                            <div class="body-about-block__aroow swiper-button-prev"></div>
+    
+                            <div class="body-about-block__aroow swiper-button-next"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="about-block__partners partners-about-block">
+                        <div class="partners-about-block__lable">Our Amazing Partners</div>
+
+                        <div class="partners-about-block__items">
+                            <div class="partners-about-block__item">
+                                <img src="./img/about/partners/01.svg" alt="Partners">
+                            </div>
+
+                            <div class="partners-about-block__item">
+                                <img src="./img/about/partners/02.svg" alt="Partners">
+                            </div>
+
+                            <div class="partners-about-block__item">
+                                <img src="./img/about/partners/03.svg" alt="Partners">
+                            </div>
+
+                            <div class="partners-about-block__item">
+                                <img src="./img/about/partners/04.svg" alt="Partners">
+                            </div>
+
+                            <div class="partners-about-block__item">
+                                <img src="./img/about/partners/05.svg" alt="Partners">
+                            </div>
+
+                            <div class="partners-about-block__item">
+                                <img src="./img/about/partners/06.svg" alt="Partners">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer class="footer">
-            
+            footer
         </footer>
     </div>
-    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
+
 </html>
