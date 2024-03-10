@@ -1,8 +1,8 @@
-.about-block {
+.about {
     padding-bottom: 112px;
 }
 
-.about-block__container {
+.about__container {
     padding-top: 184px;
     position: relative;
     &::after {
@@ -16,20 +16,20 @@
     }
 }
 
-.about-block__body {
+.about__body {
     margin-bottom: 13px;
 }
 
-.body-about-block {
+.body-about {
     position: relative;
     display: flex;
     align-items: flex-start;
 }
 
-.body-about-block__content {
+.body-about__content {
     flex: 0 1 48.46%;
 }
-.body-about-block__slider {
+.body-about__slider {
     flex: 0 1 51.54%;
 }
 
@@ -37,7 +37,7 @@
     padding-bottom: 95.02%;
 }
 
-.body-about-block__aroows {
+.body-about__aroows {
     position: absolute;
     bottom: -52px;
     right: 0;
@@ -46,8 +46,8 @@
     gap: 40px;
 }
 
-.body-about-block__aroow.swiper-button-prev,
-.body-about-block__aroow.swiper-button-next {
+.body-about__aroow.swiper-button-prev,
+.body-about__aroow.swiper-button-next {
     position: static;
     width: 11px;
     height: 19.5px;
@@ -61,19 +61,19 @@
     transform: rotate(-180deg);
 }
 
-.content-about-block {
+.content-about {
     position: relative;
     z-index: 2;
 }
 
-.content-about-block__body {
+.content-about__body {
     padding: 40px 68px 48px 0;
     & :not(:last-child) {
         margin-bottom: 23px;
     }
 }
 
-.content-about-block__subtitle {
+.content-about__subtitle {
     text-transform: uppercase;
     color: $color-textAccent;
     font-family: "DM Sans";
@@ -82,20 +82,20 @@
     line-height: 29px;
 }
 
-.content-about-block__title {
+.content-about__title {
     color: $color-textDark;
     font-size: 54px;
     font-weight: 800;
     line-height: 73px;
 }
 
-.content-about-block__text {
+.content-about__text {
     font-size: 17px;
     line-height: 23px;
     letter-spacing: 0.01em;
 }
 
-.form-about-block {
+.form-about {
     position: relative;
     z-index: 2;
     margin-right: -188px;
@@ -109,7 +109,7 @@
         0px 100px 80px 0px rgba(0, 0, 0, 0.03);
 }
 
-.form-about-block__input {
+.form-about__input {
     background: $color-ligth url(../../img/about/icons/Icon.svg) 33px 50% no-repeat;
     min-height: 86px;
     border: 1px solid $color-border;
@@ -129,7 +129,7 @@
     }
 }
 
-.form-about-block__button {
+.form-about__button {
     min-height: 86px;
     flex: 0 0 188px;
     background: $color-backgoundButton;
@@ -145,18 +145,18 @@
     }
 }
 
-.partners-about-block {
+.partners-about {
     max-width: 65.7%;
 }
 
-.partners-about-block__lable {
+.partners-about__lable {
     font-size: 17px;
     line-height: 23px;
     letter-spacing: 0.01em;
     margin-bottom: 27px;
 }
 
-.partners-about-block__items {
+.partners-about__items {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -165,59 +165,71 @@
     align-items: center;
 }
 
-.partners-about-block__item {
+.partners-about__item {
     img {
         max-width: 100%;
     }
 }
 
 @media (max-width: 1199.98px) {
-    .body-about-block {
+    .about{
+        padding-bottom: 75px;
+    }
+    .body-about {
         display: block;
     }
-    .form-about-block {
+    .form-about {
         margin-right: 0;
     }
-    .about-block__container {
+    .about__container {
         padding-top: 125px;
         padding-bottom: 30px;
     }
-    .body-about-block__content {
+    .body-about__content {
         margin-bottom: 40px;
     }
-    .about-block__body {
+    .about-__body {
         margin-bottom: 40px;
     }
-    .partners-about-block {
+    .partners-about {
         max-width: none;
         position: relative;
         z-index: 2;
     }
-    .content-about-block__body {
+    .content-about__body {
         padding-right: 0;
     }
 }
 
+@media (max-width: 990.98px) {
+    .about{
+        padding-bottom: 60px;
+    }
+}
+
 @media (max-width: 767.98px) {
-    .partners-about-block__items {
+    .about{
+        padding-bottom: 40px;
+    }
+    .partners-about__items {
         justify-content: center;
     }
-    .content-about-block__title {
+    .content-about__title {
         font-size: 30px;
         line-height: 120%;
     }
-    .form-about-block {
+    .form-about {
         display: block;
     }
-    .form-about-block__button {
+    .form-about__button {
         width: 100%;
     }
 }
 
-@media (max-width: 479.98px){
-    .form-about-block__input {
+@media (max-width: 479.98px) {
+    .form-about__input {
         background: $color-ligth;
-        padding-left: 10px;   
-        font-size: 16px; 
+        padding-left: 10px;
+        font-size: 16px;
     }
 }

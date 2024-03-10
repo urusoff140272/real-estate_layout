@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper', {
 
     // Navigation arrows
     navigation: {
-        nextEl: '.body-about-block__aroow.swiper-button-next',
-        prevEl: '.body-about-block__aroow.swiper-button-prev',
+        nextEl: '.body-about__aroow.swiper-button-next',
+        prevEl: '.body-about__aroow.swiper-button-prev',
     },
 });
