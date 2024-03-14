@@ -132,17 +132,11 @@
 .form-about__button {
     min-height: 86px;
     flex: 0 0 188px;
-    background: $color-backgoundButton;
-    color: $color-ligth;
     font-size: 17px;
     font-weight: 700;
     line-height: 23px;
     letter-spacing: 0.01em;
     padding: 5px 15px;
-    transition: 0.3s;
-    &:hover {
-        background: $color-textAccent;
-    }
 }
 
 .partners-about {

@@ -43,6 +43,7 @@ button {
   font-size: inherit;
   border-color: inherit;
   color: inherit;
+  background-color: inherit;
 }
 
 button::-moz-focus-inner {
@@ -144,16 +145,28 @@ body {
   font-size: 40px;
   font-weight: 600;
   line-height: 55px;
-  letter-spacing: 0.01em;
+}
+@media (max-width: 767.98px) {
+  .title {
+    font-size: 30px;
+    line-height: 120%;
+  }
 }
 
 .title_center {
   text-align: center;
 }
-@media (max-width: 767.98px) {
-  .title_center {
-    font-size: 30px;
-  }
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F85A47;
+  color: #FFFFFF;
+  transition: 0.3s;
+}
+.button:hover {
+  background: #FF9900;
 }
 
 .header {
@@ -362,17 +375,11 @@ body {
 .form-about__button {
   min-height: 86px;
   flex: 0 0 188px;
-  background: #F85A47;
-  color: #FFFFFF;
   font-size: 17px;
   font-weight: 700;
   line-height: 23px;
   letter-spacing: 0.01em;
   padding: 5px 15px;
-  transition: 0.3s;
-}
-.form-about__button:hover {
-  background: #FF9900;
 }
 
 .partners-about {
@@ -581,5 +588,179 @@ body {
   }
   .item-servise {
     max-width: none;
+  }
+}
+.portfolio {
+  padding: 112px 0 121px 0;
+}
+
+.portfolio__header {
+  margin-bottom: 50px;
+}
+
+.header-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.header-portfolio__content {
+  flex: 1 1 auto;
+}
+
+.header-portfolio__title:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.header-portfolio__text {
+  color: #000000;
+  line-height: 24px;
+  max-width: 470px;
+}
+
+.header-portfolio__link {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 23px;
+  min-height: 65px;
+  padding: 5px 34px;
+  border-radius: 5px;
+  box-shadow: 0px 1.85px 3.15px 0px rgba(248, 90, 71, 0.02), 0px 8.15px 6.52px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.52px 25.48px 0px rgba(248, 90, 71, 0.04), 0px 64.81px 46.85px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
+}
+
+.tabs-portfolio__nav {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  row-gap: 15px;
+  margin-bottom: 57px;
+}
+
+.tabs-portfolio__button {
+  color: #000000;
+  font-size: 19px;
+  line-height: 26px;
+  background-color: transparent;
+  position: relative;
+  transition: 0.3s;
+}
+.tabs-portfolio__button::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #F85A47;
+  transition: 0.3s;
+}
+.tabs-portfolio__button:hover {
+  color: #F85A47;
+}
+.tabs-portfolio__button:hover::after {
+  width: 100%;
+}
+
+.tabs-portfolio__button.active {
+  font-weight: 600;
+  color: #F85A47;
+}
+.tabs-portfolio__button.active::after {
+  width: 100%;
+}
+
+.tabs-portfolio__block {
+  display: none;
+}
+
+.tabs-portfolio__block.active {
+  display: block;
+}
+
+.block-tabs__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.block-tabs__item {
+  position: relative;
+  flex: 0 1 31.624%;
+}
+
+.block-tabs_accent {
+  flex: 0 1 48%;
+}
+
+.block-tabs__options {
+  position: absolute;
+  z-index: 2;
+  left: 14px;
+  top: 14px;
+  display: flex;
+  gap: 6px;
+}
+
+.block-tabs__option {
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #FFFFFF;
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 15px;
+  min-height: 26px;
+  padding: 0 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.block-tabs__option:first-child {
+  padding: 0 12px;
+}
+.block-tabs__option:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.block-tabs__image {
+  display: block;
+  min-width: 280px;
+  padding-bottom: 81.081%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.block-tabs__image img {
+  transition: 0.3s;
+}
+.block-tabs__image:hover img {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1199.98px) {
+  .portfolio {
+    padding: 75px 0;
+  }
+}
+@media (max-width: 990.98px) {
+  .portfolio {
+    padding: 60px 0;
+  }
+  .block-tabs__item {
+    flex: 0 1 48%;
+  }
+}
+@media (max-width: 767.98px) {
+  .portfolio {
+    padding: 40px 0;
+  }
+  .block-tabs__item {
+    flex: 0 1 100%;
+  }
+  .header-portfolio__link {
+    width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */
