@@ -1,5 +1,5 @@
 .blog {
-    padding: 122px 0 139px 0;
+    padding: 122px 0 63px 0;
 }
 
 .blog__title {
@@ -8,7 +8,7 @@
 
 .blog__body {
     background-color: $color-backgoundBlog;
-    padding: 39px 39px 82px 39px;
+    padding: 39px;
 }
 
 .images-blog {
@@ -100,7 +100,7 @@
 
 @media (max-width: 1199.98px) {
     .blog {
-        padding: 75px 0;
+        padding: 75px 0 40px 0;
     }
     .content-blog__title {
         margin-top: 0;
@@ -109,7 +109,7 @@
 
 @media (max-width: 990.98px) {
     .blog {
-        padding: 60px 0;
+        padding: 60px 0 30px 0;
     }
     .blog__title {
         margin-bottom: 50px;
@@ -124,7 +124,7 @@
 
 @media (max-width: 767.98px) {
     .blog {
-        padding: 50px 0;
+        padding: 50px 0 30px 0;
     }
     .blog__title {
         margin-bottom: 20px;
