@@ -1,0 +1,26 @@
+.title {
+    color: $color-textDark;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 55px;
+    @media (max-width: 767.98px) {
+        font-size: 30px;
+        line-height: 120%;
+    }
+}
+
+.title_center {
+    text-align: center;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-backgoundButton;
+    color: $color-ligth;
+    transition: 0.3s;
+    &:hover {
+        background: $color-textAccent;
+    }
+}
